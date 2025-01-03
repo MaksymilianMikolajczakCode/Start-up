@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Real Estate App
 
-## Getting Started
+A modern, responsive, and feature-rich real estate application built using **React Native** for mobile and **Next.js** for web. This app allows users to browse, search, and explore real estate listings with a seamless and intuitive experience.
 
-First, run the development server:
+---
 
+## Features
+
+- **Cross-Platform Support**: Mobile app built with React Native and web app powered by Next.js.
+- **Real-Time Listings**: Integration with backend APIs for up-to-date property information.
+- **Search and Filter**: Advanced search with filters for price, location, property type, and more.
+- **Interactive Map View**: Integration with map services for property location visualization.
+- **User Authentication**: Secure login and registration using OAuth and JWT.
+- **Favorites and Saved Searches**: Users can bookmark properties and save search preferences.
+- **Multi-Language Support**: Internationalization (i18n) for broader accessibility.
+- **Optimized Performance**: Leveraging server-side rendering (SSR) and code-splitting in Next.js.
+
+---
+
+## Technology Stack
+
+### Frontend:
+- **React Native**: For building cross-platform mobile applications.
+- **Next.js**: Framework for server-side rendered React applications.
+- **Tailwind CSS**: For styling and responsive design.
+- **Redux Toolkit**: For state management.
+- **React Query**: For data fetching and caching.
+
+### Backend:
+- **Node.js** and **Express**: Backend API server (not included in this repo but required).
+- **MongoDB** or **PostgreSQL**: Database for storing listings and user data.
+
+### Third-Party Services:
+- **Mapbox** or **Google Maps**: For interactive maps.
+- **Firebase**: Optional for push notifications and analytics.
+
+---
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js v16+ and npm or yarn installed.
+- React Native CLI installed for mobile development.
+- Access to backend API or set up your own.
+
+### Steps to Run
+
+#### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/real-estate-app.git
+cd real-estate-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2. Install Dependencies
+```bash
+# For mobile (React Native)
+cd mobile
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# For web (Next.js)
+cd ../web
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### 3. Set Up Environment Variables
+Create a `.env` file in both the `mobile` and `web` directories with the following:
 
-## Learn More
+```env
+# Common Variables
+API_URL=your-backend-api-url
 
-To learn more about Next.js, take a look at the following resources:
+# Mobile Specific (React Native)
+GOOGLE_MAPS_API_KEY=your-google-maps-api-key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Web Specific (Next.js)
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### 4. Run the Applications
 
-## Deploy on Vercel
+**Mobile:**
+```bash
+cd mobile
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Web:**
+```bash
+cd web
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
+
+---
+
+
+
+## Contact
+
+For questions or support, please contact:
+- Name: Maksymilian Mikolajczak
+- Email: maksymilianmikolajczakcode@gmail.com
+
+---
+
+## Acknowledgments
+
+Special thanks to the open-source community and the following libraries and frameworks that made this project possible:
+- React Native
+- Next.js
+- Tailwind CSS
+- Mapbox / Google Maps
