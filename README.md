@@ -1,6 +1,6 @@
-# Real Estate App
+# Start-up App
 
-A modern, responsive, and feature-rich real estate application built using **React Native** for mobile and **Next.js** for web. This app allows users to browse, search, and explore real estate listings with a seamless and intuitive experience.
+A modern, responsive, and feature-rich real start-up built using **React Native** for mobile and **Next.js** for web. This app allows users to browse, search, and explore startup ideas with a seamless and intuitive experience.
 
 ---
 
